@@ -16,11 +16,15 @@ export default function Register({ onRegister }: any) {
         
       });
 
+      console.log("✅ RESPUESTA:", res.data);
+
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
       onRegister();
     } catch {
+      console.log("❌ ERROR COMPLETO:", error);
+      console.log("❌ ERROR RESPONSE:", error?.response);
       alert("Error en registro");
     }
   };
