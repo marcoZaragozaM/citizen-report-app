@@ -23,6 +23,9 @@ export default function ResetPassword() {
       <button className="button" onClick={handleSubmit}>
         Cambiar contraseña
       </button>
+      <button className="button" onClick={() => setView("home")}>
+              Volver al inicio
+      </button>
     </Layout>
   );
 }

@@ -27,6 +27,10 @@ export default function ForgotPassword() {
       <button className="button" onClick={handleSubmit}>
         Enviar
       </button>
+
+      <button className="button" onClick={() => setView("home")}>
+              Volver al inicio
+      </button>
     </Layout>
   );
 }
