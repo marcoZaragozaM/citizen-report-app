@@ -81,7 +81,8 @@ ${a.city || a.town || ""}, ${a.state || ""}`;
       formData.append("type", type);
 
       // 🔥 ESTO ES CLAVE
-      formData.append("location", JSON.stringify(location));
+      console.log("LOCATION:", location);
+      formData.append("location", JSON.stringify(selectedLocation));
 
       // 🔥 ENVÍAS DIRECCIÓN
       formData.append("address", address);
