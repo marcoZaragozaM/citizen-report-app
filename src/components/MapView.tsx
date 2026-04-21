@@ -100,7 +100,7 @@ export default function MapView({
 
             {r.image && (
               <img
-                src={`http://localhost:3000/uploads/${r.image}`}
+                src={`${window.location.origin}/uploads/${r.image}`}
                 style={{
                   width: "100%",
                   marginTop: 10,
