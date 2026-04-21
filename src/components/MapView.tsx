@@ -83,34 +83,42 @@ export default function MapView({
       )}
 
       {/* 🚨 REPORTES */}
-      {reports.map((r) => (
-        <Marker
-          key={r._id}
-          position={[r.location.lat, r.location.lng]}
-          icon={createIcon(iconColors[r.status] || "red")}
-        >
-          <Popup>
-            <b>{r.title}</b>
-            <br />
-            {r.description}
-            <br /><br />
-            Estado: <b>{r.status}</b>
-            <br />
-            👍 {r.votes}
+      {reports.map((r) => {
+  if (!r.location?.lat || !r.location?.lng) return null;
 
-            {r.image && (
-              <img
-                src={`${window.location.origin}/uploads/${r.image}`}
-                style={{
-                  width: "100%",
-                  marginTop: 10,
-                  borderRadius: 8
-                }}
-              />
-            )}
-          </Popup>
-        </Marker>
-      ))}
+  return (
+    <Marker
+      key={r._id}
+      position={[
+        Number(r.location.lat),
+        Number(r.location.lng)
+      ]}
+      icon={createIcon(iconColors[r.status] || "red")}
+    >
+      <Popup>
+        <b>{r.title}</b>
+        <br />
+        {r.description}
+        <br /><br />
+        Estado: <b>{r.status}</b>
+        <br />
+        👍 {r.votes}
+
+        {r.image && (
+          <img
+            src={`${window.location.origin}/uploads/${r.image}`}
+            style={{
+              width: "100%",
+              marginTop: 10,
+              borderRadius: 8
+            }}
+          />
+        )}
+      </Popup>
+    </Marker>
+  );
+})}
+
     </MapContainer>
   );
 }
