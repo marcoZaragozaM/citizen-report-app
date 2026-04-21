@@ -86,7 +86,7 @@ export default function ReportCard({ report, onUpdated }: any) {
       {/* 📸 IMAGEN */}
       {report.image && (
         <img
-          src={`http://localhost:3000/uploads/${report.image}`}
+          src={`${window.location.origin}/uploads/${report.image}`}
           style={{ width: "100%", maxWidth: 300, borderRadius: 10 }}
         />
       )}
