@@ -71,7 +71,7 @@ function App() {
     return (
       <div className="container">
         <div className="card">
-          <ResetPassword />
+          <ResetPassword goHome={() => setView("home")} />
         </div>
       </div>
     );

@@ -2,7 +2,7 @@ import { useState } from "react";
 import api from "../services/api";
 import Layout from "../components/Layout";
 
-export default function ResetPassword() {
+export default function ResetPassword({ goHome }: any) {
   const [token, setToken] = useState("");
   const [password, setPassword] = useState("");
 
@@ -23,7 +23,14 @@ export default function ResetPassword() {
       <button className="button" onClick={handleSubmit}>
         Cambiar contraseña
       </button>
-     
+
+       <button
+  className="button"
+  onClick={goHome}
+  style={{ marginLeft: 10 }}
+>
+  Volver al inicio
+</button>
 
  
     </Layout>
