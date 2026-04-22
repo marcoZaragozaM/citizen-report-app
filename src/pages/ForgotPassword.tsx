@@ -3,7 +3,8 @@ import api from "../services/api";
 import Layout from "../components/Layout";
 
 
-export default function ForgotPassword({ goHome }: any) {
+
+export default function ForgotPassword() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async () => {
@@ -29,13 +30,7 @@ export default function ForgotPassword({ goHome }: any) {
         Enviar
       </button>
 
-      <button
-  className="button"
-  onClick={goHome}
-  style={{ marginLeft: 10 }}
->
-  Volver al inicio
-</button>
+    
     </Layout>
   );
 }

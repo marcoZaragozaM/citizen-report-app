@@ -25,10 +25,7 @@ export default function ResetPassword() {
       </button>
      
 
-      <button className="button" onClick={goHome}
-      style={{ marginLeft: "10px" }}>
-        Volver al inicio
-      </button>
+ 
     </Layout>
   );
 }

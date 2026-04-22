@@ -57,7 +57,7 @@ function App() {
     return (
       <div className="container">
         <div className="card">
-          <ForgotPassword goHome={() => setView("home")} />
+          <ForgotPassword />
           <button className="button" onClick={() => setView("reset")}>
             Ya tengo token
           </button>
