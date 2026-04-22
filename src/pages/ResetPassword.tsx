@@ -27,9 +27,9 @@ export default function ResetPassword({ goHome }: any) {
        <button
   className="button"
   onClick={goHome}
-  style={{ marginLeft: 10 }}
+  style={{ marginLeft: 5 }}
 >
-  Volver al inicio
+  Inicio
 </button>
 
  
