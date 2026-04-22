@@ -70,7 +70,7 @@ ${a.city || a.town || ""}, ${a.state || ""}`;
       }
 
       if (!location) {
-        alert("Selecciona ubicación ❌");
+        alert("Selecciona ubicación");
         return;
       }
 

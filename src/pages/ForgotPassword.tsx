@@ -28,7 +28,7 @@ export default function ForgotPassword() {
         Enviar
       </button>
 
-      <button className="button" onClick={() => setView("home")}>
+      <button className="button" onClick={() => setView("login")}>
               Volver al inicio
       </button>
     </Layout>
