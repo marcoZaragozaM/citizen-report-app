@@ -23,8 +23,11 @@ export default function ResetPassword() {
       <button className="button" onClick={handleSubmit}>
         Cambiar contraseña
       </button>
-      <button className="button" onClick={() => setView("login")}>
-              Volver al inicio
+     
+
+      <button className="button" onClick={() => window.location.replace("/")}
+      style={{ marginLeft: "10px" }}>
+        Volver al inicio
       </button>
     </Layout>
   );
