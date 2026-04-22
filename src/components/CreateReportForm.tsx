@@ -115,7 +115,7 @@ ${a.city || a.town || ""}, ${a.state || ""}`;
 
   return (
     <div style={card}>
-      <h2>📢 Crear reporte</h2>
+      <h2>Crear reporte</h2>
 
       <input
         placeholder="Título"
@@ -152,7 +152,7 @@ ${a.city || a.town || ""}, ${a.state || ""}`;
 
       {/* 📍 GPS */}
       <button onClick={getLocation} style={gpsBtn}>
-        📍 Usar mi ubicación
+         Usar mi ubicación
       </button>
 
       {/* 📍 DIRECCIÓN */}
@@ -162,7 +162,7 @@ ${a.city || a.town || ""}, ${a.state || ""}`;
 
       {/* 🚀 CREAR */}
       <button onClick={createReport} style={createBtn}>
-        🚀 Crear reporte
+         Crear reporte
       </button>
     </div>
   );

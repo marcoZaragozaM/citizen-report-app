@@ -38,8 +38,9 @@ export default function Register({ onRegister }: any) {
       <button className="button" onClick={handleSubmit}>
         Registrarse
       </button>
-      <button className="button" onClick={() => setView("login")}>
-              Volver al inicio
+      <button className="button" onClick={goHome}
+      style={{ marginLeft: "10px" }}>
+        Volver al inicio
       </button>
     </Layout>
   );

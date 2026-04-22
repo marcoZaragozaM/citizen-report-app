@@ -25,7 +25,7 @@ export default function ResetPassword() {
       </button>
      
 
-      <button className="button" onClick={() => window.location.replace("/")}
+      <button className="button" onClick={goHome}
       style={{ marginLeft: "10px" }}>
         Volver al inicio
       </button>

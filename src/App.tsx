@@ -120,7 +120,7 @@ function App() {
         <h1 style={{ marginTop: 10 }}>Panel de reportes</h1>
 
         <div className="card">
-          <p><b>🔒 Necesitas cuenta para reportar</b></p>
+          <p><b>Necesitas cuenta para reportar</b></p>
 
           <button className="button" onClick={() => setIsRegister(true)}>
             Crear cuenta
