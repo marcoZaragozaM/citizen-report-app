@@ -2,7 +2,8 @@ import { useState } from "react";
 import api from "../services/api";
 import Layout from "../components/Layout";
 
-export default function ForgotPassword() {
+
+export default function ForgotPassword({ goHome }: any) {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async () => {
@@ -28,10 +29,13 @@ export default function ForgotPassword() {
         Enviar
       </button>
 
-      <button className="button" onClick={goHome}
-      style={{ marginLeft: "10px" }}>
-        Volver al inicio
-      </button>
+      <button
+  className="button"
+  onClick={goHome}
+  style={{ marginLeft: 10 }}
+>
+  Volver al inicio
+</button>
     </Layout>
   );
 }

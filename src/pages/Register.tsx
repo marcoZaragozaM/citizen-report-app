@@ -38,10 +38,13 @@ export default function Register({ onRegister }: any) {
       <button className="button" onClick={handleSubmit}>
         Registrarse
       </button>
-      <button className="button" onClick={goHome}
-      style={{ marginLeft: "10px" }}>
-        Volver al inicio
-      </button>
+      <button
+            className="button"
+            onClick={() => setShowLogin(true)}
+            style={{ marginLeft: 10 }}
+          >
+            Iniciar sesión
+          </button>
     </Layout>
   );
 }
